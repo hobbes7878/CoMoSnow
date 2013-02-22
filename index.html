@@ -35,16 +35,16 @@ Prominent words tweeted with <b>#comoSnow</b>. <br>Networked for adjacency and s
 <script>
 
 var width = 960,
-    height = 500
+    height = 600
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
 var force = d3.layout.force()
-    .gravity(.05)
+    .gravity(.02)
     .distance(100)
-    .charge(-100)
+    .charge(-200)
     .size([width, height]);
 
 d3.json("data.json", function(json) {
